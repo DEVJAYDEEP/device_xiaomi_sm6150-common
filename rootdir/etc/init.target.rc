@@ -52,10 +52,14 @@ on init
     # Setup permission for Power HAL
     chown system system /dev/stune/top-app/schedtune.boost
     chown system system /dev/cpu_dma_latency
-
+    chown system system /sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq
+    chown system system /sys/class/devfreq/soc:qcom,cpu6-cpu-l3-lat/min_freq
+    
     chmod 0664 /dev/stune/top-app/schedtune.boost
     chmod 0664 /dev/cpu_dma_latency
-
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-l3-lat/min_freq
+    
     # Add a cpuset for the camera daemon
     # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
