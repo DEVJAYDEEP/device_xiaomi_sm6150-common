@@ -370,6 +370,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
 # RIL
+$(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
