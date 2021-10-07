@@ -197,3 +197,7 @@ vendor.usb.use_ffs_mtp=0
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Soc
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM6150
