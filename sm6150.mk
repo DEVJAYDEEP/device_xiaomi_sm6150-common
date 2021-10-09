@@ -232,13 +232,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3 \
     android.hardware.neuralnetworks@1.3.vendor
 
-# IFAA manager
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
