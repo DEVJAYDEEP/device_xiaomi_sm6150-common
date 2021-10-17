@@ -264,7 +264,10 @@ PRODUCT_PACKAGES += \
     libOmxSwVencMpeg4 \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx.vendor \
+    libgui \
+    libgui.vendor
 
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
