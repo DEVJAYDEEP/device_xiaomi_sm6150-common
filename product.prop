@@ -1,3 +1,6 @@
 # Audio
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
