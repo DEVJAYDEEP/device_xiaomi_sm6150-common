@@ -7,6 +7,9 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Bypass build time check on uses_libs until vendor fixes all their apps
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
